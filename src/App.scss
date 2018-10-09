@@ -1,0 +1,37 @@
+img {
+  width: 100%;
+}
+
+main {
+
+  .list-auto {
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        width: calc((100% / 3) - 30px);
+        display: inline-block;
+        margin: 0 15px 45px;
+        vertical-align: top;
+        background: #fff;
+
+        img {
+          height: 200px;
+          object-fit: cover;
+        }
+
+        .detail {
+          padding: 10px 10px 20px;
+          border-bottom: 2px solid #DFDFDF;
+
+          .total-info {
+            margin: 10px 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
