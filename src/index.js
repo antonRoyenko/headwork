@@ -7,10 +7,12 @@ import {createLogger} from 'redux-logger'
 import reducer from './reducers'
 import App from './App/App'
 import { BrowserRouter } from 'react-router-dom';
-import styles from './App.scss';
+import './App.scss';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
 import 'mdbreact/dist/css/mdb.css';
+import 'font-awesome/css/font-awesome.min.css';
+import 'react-id-swiper/src/styles/scss/swiper.scss';
 
 const middleware = [thunk];
 if (process.env.NODE_ENV !== 'production') {

@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import {getCars} from '../../actions'
+import {getCars} from '../../actions';
+import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
+import { Link } from "react-router-dom";
 
 class CarsList extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         this.props.getCars();
     }
@@ -20,29 +18,31 @@ class CarsList extends Component {
 
                 </div>
                 <div className="list-auto">
-                    <ul>
                         {
                             cars.list.length !== 0 && (
                                 cars.list.map((item) => (
-                                    <li key={item.id} className="item">
-                                        <img src={item.cover_image} alt=""/>
-                                        <div className="detail">
-                                            <h4>
-                                                {item.name}
-                                            </h4>
-                                            <div className="total-info d-flex justify-content-between">
+                                    <Card key={item.id} className="item">
+                                        <div className="view overlay zoom">
+                                            <img
+                                                src={item.cover_image}
+                                                className="img-fluid " alt="zoom" />
+                                        </div>
+                                        <CardBody>
+                                            <a className="activator waves-effect waves-light mr-4"><i className="fa share-alt" /></a>
+                                            <CardTitle>{item.name}</CardTitle>
+                                            <hr />
+                                            <CardText>
                                                 <span>Country of Origin: {item.Origin}</span>
                                                 <span>Year: {item.Year}</span>
-                                            </div>
-                                            <div className="d-flex justify-content-center">
-                                                <button type="button" className="btn btn-primary btn-rounded">Detail</button>
-                                            </div>
-                                        </div>
-                                    </li>
+                                            </CardText>
+                                            <Link to={`/car/${item.id}`} className="black-text d-flex justify-content-end">
+                                                <h5>Detail <i className="fa fa-angle-double-right" /></h5>
+                                            </Link>
+                                        </CardBody>
+                                    </Card>
                                 ))
                             )
                         }
-                    </ul>
                 </div>
             </div>
 

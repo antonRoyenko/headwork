@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name":"chevrolet chevelle malibu",
-    "cover_image": "./img/chevrolet-chevelle.jpg",
+    "cover_image": "/img/chevrolet-chevelle.jpg",
     "Miles_per_Gallon":18,
     "Cylinders":8,
     "Displacement":307,
@@ -15,7 +15,7 @@
   {
     "id": 1,
     "name":"buick skylark 320",
-    "cover_image": "./img/buick-skylark.jpg",
+    "cover_image": "/img/buick-skylark.jpg",
     "Miles_per_Gallon":15,
     "Cylinders":8,
     "Displacement":350,
@@ -28,7 +28,7 @@
   {
     "id": 2,
     "name":"plymouth satellite",
-    "cover_image": "./img/plymouth-satellite.jpg",
+    "cover_image": "/img/plymouth-satellite.jpg",
     "Miles_per_Gallon":18,
     "Cylinders":8,
     "Displacement":318,
@@ -41,7 +41,7 @@
   {
     "id": 3,
     "name":"amc rebel sst",
-    "cover_image": "./img/amc-rebel.jpg",
+    "cover_image": "/img/amc-rebel.jpg",
     "Miles_per_Gallon":16,
     "Cylinders":8,
     "Displacement":304,
@@ -54,7 +54,7 @@
   {
     "id": 4,
     "name":"ford torino",
-    "cover_image": "./img/ford-torino.jpg",
+    "cover_image": "/img/ford-torino.jpg",
     "Miles_per_Gallon":17,
     "Cylinders":8,
     "Displacement":302,
@@ -67,7 +67,7 @@
   {
     "id": 5,
     "name":"ford galaxie 500",
-    "cover_image": "./img/ford-galaxie.jpg",
+    "cover_image": "/img/ford-galaxie.jpg",
     "Miles_per_Gallon":15,
     "Cylinders":8,
     "Displacement":429,
@@ -80,7 +80,7 @@
   {
     "id": 6,
     "name":"chevrolet impala",
-    "cover_image": "./img/chevrolet-impala.jpg",
+    "cover_image": "/img/chevrolet-impala.jpg",
     "Miles_per_Gallon":14,
     "Cylinders":8,
     "Displacement":454,
@@ -93,7 +93,7 @@
   {
     "id": 7,
     "name":"plymouth fury iii",
-    "cover_image": "./img/plymouth-fury.jpg",
+    "cover_image": "/img/plymouth-fury.jpg",
     "Miles_per_Gallon":14,
     "Cylinders":8,
     "Displacement":440,
@@ -106,7 +106,7 @@
   {
     "id": 8,
     "name":"pontiac catalina",
-    "cover_image": "./img/pontiac-catalina.jpg",
+    "cover_image": "/img/pontiac-catalina.jpg",
     "Miles_per_Gallon":14,
     "Cylinders":8,
     "Displacement":455,
@@ -119,7 +119,7 @@
   {
     "id": 9,
     "name":"amc ambassador dpl",
-    "cover_image": "./img/amc-ambassador.jpg",
+    "cover_image": "/img/amc-ambassador.jpg",
     "Miles_per_Gallon":15,
     "Cylinders":8,
     "Displacement":390,
@@ -132,7 +132,7 @@
   {
     "id": 10,
     "name":"citroen ds-21 pallas",
-    "cover_image": "./img/citroen.jpg",
+    "cover_image": "/img/citroen.jpg",
     "Miles_per_Gallon":null,
     "Cylinders":4,
     "Displacement":133,
@@ -145,7 +145,7 @@
   {
     "id": 11,
     "name":"chevrolet chevelle concours (sw)",
-    "cover_image": "./img/chevrolet-chevelle.jpg",
+    "cover_image": "/img/chevrolet-chevelle.jpg",
     "Miles_per_Gallon":null,
     "Cylinders":8,
     "Displacement":350,
@@ -158,7 +158,7 @@
   {
     "id": 12,
     "name":"ford torino (sw)",
-    "cover_image": "./img/ford-torino-sw.jpg",
+    "cover_image": "/img/ford-torino-sw.jpg",
     "Miles_per_Gallon":null,
     "Cylinders":8,
     "Displacement":351,

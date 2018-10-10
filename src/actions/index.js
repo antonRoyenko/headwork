@@ -5,13 +5,13 @@ export const getCars = () => {
     return dispatch => {
         dispatch(getCarsStarted());
 
-        // fetch('/api/get_user')
+        // fetch('/api/get_cars')
         //     .then(response => {return response.json()})
         //     .then(data => {
-        //         dispatch(getUserSuccess(data));
+        //         dispatch(getCarsSuccess(data));
         //     })
         //     .catch(error => {
-        //         dispatch(getUserFailure(error.message));
+        //         dispatch(getCarsFailure(error.message));
         //     });
 
         // it's our fake data from request promise, if request success
@@ -28,5 +28,5 @@ export const getCars = () => {
 
     function getCarsSuccess(data) {
         return {type: carsConstant.GET_CARS_REQUEST_SUCCESS, data}
-    };
+    }
 };

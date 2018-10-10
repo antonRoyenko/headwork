@@ -1,17 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarNav,
+    Collapse,
+    NavLink,
+} from 'mdbreact';
 
 export const Header = () => (
-    <header>
-        <nav>
-            <ul className="nav justify-content-end py-4">
-                <li className="nav-item">
-                    <Link className="nav-link" to='/'>Home</Link>
-                </li>
-                <li className="nav-item">
-                    <Link className="nav-link" to='/profile'>Profile</Link>
-                </li>
-            </ul>
-        </nav>
-    </header>
-)
+    <Navbar color="indigo" dark expand="md" scrolling>
+        <Collapse navbar>
+            <NavbarNav left>
+                <NavLink to="/" activeClassName="active" exact>
+                    Home
+                </NavLink>
+                <NavLink to="/profile" activeClassName="active">
+                    Profile
+                </NavLink>
+            </NavbarNav>
+        </Collapse>
+    </Navbar>
+);
