@@ -31,6 +31,22 @@ main {
         }
       }
   }
+
+  .profile {
+    display: flex;
+    background: #fff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border: 0;
+    font-weight: 400;
+
+    .photo, .about {
+      width: 50%;
+    }
+
+    .about {
+      margin-left: 20px;
+    }
+  }
 }
 
 .car-detail {
@@ -67,6 +83,26 @@ main {
   }
 }
 
+@media (min-width: 320px) and (max-width: 1199px) {
+  main {
+    .profile {
+      display: inline-block;
+
+      .photo, .about {
+        width: 100%;
+      }
+
+      .about {
+        margin-top: 20px;
+
+        ul {
+          width: calc(100% - 40px);
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .collapse:not(.show) {
     display: block !important;
@@ -91,21 +127,5 @@ main {
       width: 100%;
       margin-left: 0;
     }
-  }
-}
-
-.profile {
-  display: flex;
-
-  .photo, .about {
-    width: 50%;
-  }
-
-  .about {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    border: 0;
-    font-weight: 400;
   }
 }
